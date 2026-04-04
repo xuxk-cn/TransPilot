@@ -1,16 +1,18 @@
 ﻿import type {
   ModelHealth,
+  ModelResponseEnvelope,
   TranslationOptions,
   TranslationResult,
 } from "../types/model";
 
-export const DEFAULT_MODEL_ENDPOINT = "http://127.0.0.1:8081/v1/chat/completions";
+export const DEFAULT_MODEL_HOST = "http://127.0.0.1:8081";
+export const DEFAULT_MODEL_ENDPOINT = `${DEFAULT_MODEL_HOST}/v1/chat/completions`;
 
 export const DEFAULT_TRANSLATION_PROMPT =
   "请阅读图片中的文字内容，并翻译为简体中文。默认只输出译文，不要添加解释。";
 
 export async function checkModelHealth(
-  endpoint = "http://127.0.0.1:8081",
+  endpoint = DEFAULT_MODEL_HOST,
 ): Promise<ModelHealth> {
   const startedAt = performance.now();
 
@@ -77,13 +79,7 @@ export async function translateImage(
     throw new Error(`Model request failed: ${response.status} ${response.statusText}`);
   }
 
-  const rawResponse = (await response.json()) as {
-    choices?: Array<{
-      message?: {
-        content?: string;
-      };
-    }>;
-  };
+  const rawResponse = (await response.json()) as ModelResponseEnvelope;
 
   return {
     translatedText: rawResponse.choices?.[0]?.message?.content?.trim() ?? "",

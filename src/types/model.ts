@@ -20,3 +20,11 @@ export type TranslationResult = {
   model: string;
   rawResponse?: unknown;
 };
+
+export type ModelResponseEnvelope = {
+  choices?: Array<{
+    message?: {
+      content?: string;
+    };
+  }>;
+};
