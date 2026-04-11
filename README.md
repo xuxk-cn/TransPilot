@@ -1,4 +1,4 @@
-# TransPilot-帮助文档
+# TransPilot
 ## 1. 产品定位
 
 `TransPilot` 是一个 Windows 截图、识别与翻译工具，当前主要面向这几类场景：
