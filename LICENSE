@@ -1,0 +1,51 @@
+TransPilot Closed Source License
+
+Copyright (c) 2026 xuxk-cn / 星辰视界-AstraView
+All rights reserved.
+
+This repository and the released software are provided for download, evaluation,
+deployment, and end-user use only, subject to the terms below.
+
+1. Ownership
+
+The software, documentation, user interface, assets, release packages, and all
+related materials are the exclusive property of the copyright holder.
+
+2. Source Code
+
+The source code of TransPilot is not open source and is not licensed for public
+copying, modification, redistribution, sublicensing, publication, or derivative
+development unless the copyright holder gives prior written permission.
+
+3. Binary Use
+
+End users may download and use the official released binary packages for
+personal use, internal business use, evaluation, and deployment within their
+organization, unless otherwise restricted by separate written agreement.
+
+4. Restrictions
+
+Without prior written permission, you may not:
+
+- copy or redistribute the source code;
+- modify, reverse engineer, decompile, or create derivative works from the
+  software, except where such restriction is prohibited by applicable law;
+- repackage or redistribute official release files as your own product;
+- remove copyright, trademark, or attribution information.
+
+5. Third-Party Components
+
+Third-party components, models, and runtimes included or referenced by this
+project may be subject to their own licenses and terms. Users are responsible
+for complying with those separate terms.
+
+6. No Warranty
+
+The software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to merchantability, fitness for a particular
+purpose, and non-infringement.
+
+7. Limitation of Liability
+
+In no event shall the copyright holder be liable for any claim, damages, or
+other liability arising from or related to the software or its use.
