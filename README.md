@@ -1,4 +1,4 @@
-# TransPilot
+# TransPilot-智译领航
 
 `TransPilot` 是一个面向 Windows 的截图、识图、翻译与表格识别应用。
 
