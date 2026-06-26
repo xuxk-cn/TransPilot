@@ -1,6 +1,4 @@
-# TransPilot-智译领航
-
-# 智译 TransPilot - LLM 智能屏幕翻译与表格识别工具
+# 智译领航 TransPilot - LLM 智能屏幕翻译与表格识别工具
 
 ---
 
